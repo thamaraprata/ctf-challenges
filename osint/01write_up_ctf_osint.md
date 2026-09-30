@@ -2,7 +2,7 @@
 
 ## 📋 Informações
 - **Categoria:** OSINT (Open Source Intelligence)
-- **Plataforma:** HackTheBox
+- **Plataforma:** Investiga Osint
 - **Dificuldade:** Fácil
 
 ---
@@ -28,7 +28,7 @@ Analisando as pistas do enunciado:
 Para validar os fatos e buscar os dados específicos, utilizei dorks nos buscadores (Google e DuckDuckGo):
 
 ```text
-"Iceland" "Prime Minister" "Panama Papers" "renounced" "wife"
+ "Prime Minister" "Panama Papers" "renounced" "wife"
 ```
 
 ### 2. Análise dos Resultados
@@ -46,27 +46,10 @@ Cruzando as informações com a base de dados do **ICIJ (Offshore Leaks Database
 Durante a submissão, o maior desafio foi adequar o formato da string exata exigida pelo desafio (ex: maiúsculas/minúsculas ou separadores por underline).
 
 Após validar a sintaxe esperada do desafio, a flag final foi estruturada com os dados coletados.
-
-### 🚩 Flag
-`HTB{Wintris_Inc_Anna_Sigurlaug_Palsdottir_2007_2009}`
-
-*(Nota: Substitua o texto acima no formato exato que a plataforma aceitou no seu envio).*
-
----
-
-⚠️ **Aviso importante**  
-Todo o material aqui contido é para fins educacionais. As técnicas de investigação OSINT documentadas visam o aprendizado em cenários autorizados e de fontes abertas.
-
-🚀 **Como contribuir**  
-1. Faça um fork do repositório  
-2. Crie uma branch: `git checkout -b feat/nova-solucao`  
-3. Adicione seu write-up seguindo o template  
-4. Commit: `git commit -m "feat: add write-up para desafio Panama Papers"`  
-5. Push: `git push origin feat/nova-solucao`  
-6. Abra um Pull Request  
+ 
 
 📬 **Contato**  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)  
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com)  
 
-Happy Hacking! 🎯💻
+UrutauSec - UFG! 🎯💻
