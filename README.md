@@ -1,119 +1,122 @@
-# ctf-challenges
-🏁 Challenges de CTF resolvidos — write-ups de web, pwn, crypto e misc.
-# 🚩 ctf-writeups
+# 🚩 CTF Write-ups
 
-> Repositório com soluções de challenges de Capture The Flag (CTF) que resolvi em competições brasileiras e internacionais.
+> Repositório com soluções e documentações detalhadas de desafios de Capture The Flag (CTF) e inteligência de fontes abertas (OSINT) resolvidos em competições nacionais e internacionais.
 
 ---
 
-## 📌 Sobre o repositório
+## 📌 Sobre o Repositório
 
-Cada challenge possui um **write-up** detalhado explicando:
+Este espaço é dedicado a documentar a resolução de desafios de cibersegurança e OSINT. Cada write-up contém uma explicação passo a passo com:
 
-- O raciocínio utilizado
-- A vulnerabilidade explorada
-- O exploit desenvolvido
-- A flag capturada
+- **Contexto e objetivos:** Entendimento do cenário do desafio.
+- **Metodologia de investigação/enumeração:** Técnicas de reconhecimento, OSINT, dorking ou análise de superfície.
+- **Análise da vulnerabilidade ou vetor de ataque:** Identificação das falhas ou informações críticas.
+- **Exploitation / Resolução:** Passos práticos ou scripts utilizados.
+- **Flag capturada:** Formato e validação do resultado.
 
-> 🎯 **Foco:** Aprender raciocínio ofensivo aplicado e compartilhar conhecimento com a comunidade.
+> 🎯 **Objetivo:** Consolidar o aprendizado em segurança ofensiva e investigação digital, compartilhando conhecimento técnico com a comunidade.
 
 ---
 
 ## 🏆 Plataformas
 
-| Plataforma     | Desafios resolvidos |
-|----------------|---------------------|
-| HackTheBox     | 🟢 Em andamento     |
-| CTF-BR         | 🟡 Em andamento     |
-| Hackaflag      | 🟡 Em andamento     |
-| Pwnable        | 🔴 Em breve         |
+| Plataforma | Status |
+| :--- | :---: |
+| **InvestigaOSINT** | 🟢 Em andamento |
+| **HackTheBox** | 🟢 Em andamento |
+| **CTF-BR** | 🟡 Em em andamento |
+| **Hackaflag** | 🟡 Em andamento |
+| **Pwnable.tw / Pwnable.kr** | 🔴 Em breve |
 
 ---
 
 ## 📂 Categorias
 
-| Categoria   | Descrição                              |
-|-------------|----------------------------------------|
-| 🌐 **Web**      | Exploração de vulnerabilidades web     |
-| 💻 **Pwn**      | Exploração de binários e memória       |
-| 🔐 **Crypto**   | Criptografia e quebra de cifras        |
-| 🔄 **Reverse**  | Engenharia reversa de executáveis      |
-| 🕵️ **Forensics**| Análise forense de arquivos e tráfego  |
-| 🧩 **Misc**     | Desafios diversos e criativos          |
+| Categoria | Descrição |
+| :--- | :--- |
+| 🔎 **OSINT** | Inteligência de fontes abertas, investigação digital e geopolítica |
+| 🌐 **Web** | Exploração de vulnerabilidades em aplicações web (OWASP Top 10) |
+| 💻 **Pwn** | Exploração de binários, estouro de buffer e corrupção de memória |
+| 🔐 **Crypto** | Criptanálise, quebra de cifras e falhas de implementação |
+| 🔄 **Reverse** | Engenharia reversa de software e malwares |
+| 🕵️ **Forensics** | Análise forense de memória, tráfego de rede (PCAP) e artefatos |
+| 🧩 **Misc** | Desafios diversos, esteganografia e automação |
 
 ---
 
-## 🛠️ Linguagens utilizadas
+## 🛠️ Tecnologias e Ferramentas
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
+---
+
+## 🌲 Estrutura de Arquivos
+
+```text
 ctf-writeups/
+├── osint/
+│   └── nome-do-desafio/
+│       ├── README.md        # Write-up detalhado do desafio
+│       └── evidence/        # Capturas de tela e evidências coletadas
 ├── web/
-│ └── challenge-name/
-│ ├── README.md # Write-up completo
-│ ├── exploit.py # Script do exploit
-│ └── payloads.txt # Payloads utilizados
+│   └── nome-do-desafio/
+│       ├── README.md
+│       ├── exploit.py       # Script de exploração autoral
+│       └── payloads.txt     # Listas de payloads utilizadas
 ├── pwn/
 ├── crypto/
 ├── reverse/
 ├── forensics/
 ├── misc/
 └── templates/
-└── writeup-template.md # Template para novos write-ups
-
-
+    └── writeup-template.md  # Template padrão para novas resoluções
+```
 
 ---
 
-## 📝 Exemplo de write-up
+## 📝 Estrutura Padrão dos Write-ups
 
-Cada write-up segue o seguinte formato:
+Os write-ups mantêm um padrão consistente para facilitar a leitura:
 
-```md
-# Challenge: Nome do Desafio
+```markdown
+# Challenge: [Nome do Desafio]
 
 ## 📋 Informações
-- **Categoria:** Web
-- **Plataforma:** HackTheBox
-- **Dificuldade:** Fácil
+- **Categoria:** OSINT / Web / Pwn / etc.
+- **Plataforma:** InvestigaOSINT / HackTheBox / etc.
+- **Dificuldade:** Fácil / Média / Difícil
 
-## 🔍 Enumeração
-[Passos iniciais de reconhecimento]
+## 📖 Descrição
+[Descrição original do desafio ou síntese do problema]
 
-## 🎯 Vulnerabilidade
-[Descrição da falha explorada]
+## 🔍 Coleta de Informações / Enumeração
+[Passos do reconhecimento, dorks, buscas ou ferramentas utilizadas]
 
-## 💥 Exploit
-[Explicação do exploit + código]
+## 🎯 Análise e Vulnerabilidade
+[Detalhes do vetor de ataque ou das evidências encontradas]
+
+## 💥 Resolução / Exploit
+[Passo a passo da solução ou código do exploit]
 
 ## 🚩 Flag
-`CTF{exemplo_de_flag}`
+`FLAG{exemplo_de_flag}`
+```
 
+---
 
+## ⚠️ Aviso Legal
 
-⚠️ Aviso importante
-Todo o material aqui contido é para fins educacionais.
-As técnicas e exploits documentados devem ser utilizados apenas em ambientes autorizados.
+Todo o conteúdo disponibilizado neste repositório tem fins estritamente educacionais e acadêmicos. As técnicas e ferramentas demonstradas devem ser utilizadas exclusivamente em ambientes controlados ou autorizados (CTFs, Lab Environments e Programas de Bug Bounty autorizados).
 
-🚀 Como contribuir
-Faça um fork do repositório
+---
 
-Crie uma branch: git checkout -b feat/nova-solucao
+## 📬 Contato e Redes
 
-Adicione seu write-up seguindo o template
-
-Commit: git commit -m "feat: add write-up para desafio X"
-
-Push: git push origin feat/nova-solucao
-
-Abra um Pull Request
-
-📬 Contato
-https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
-https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
 
 Happy Hacking! 🎯💻
----
